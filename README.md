@@ -7,7 +7,7 @@ Checkout this repo and cd into it, then build the image using:
 docker build -t ${USER}/docker-beats-arm-builder .
 ```
 
-Once it's done, run the docker conatiner and pass in the version you want to build. 
+Once it's done, run the docker container and pass in the version you want to build. 
 ```
 docker run -it --rm -e "VERSION=6.2.3" -v $(pwd):/build ${USER}/docker-beats-arm-builder
 ```
